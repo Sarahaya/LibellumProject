@@ -1,4 +1,5 @@
 <?php
+// O Meyer ta participando tbm
 //Constantes para definição do caminho até o MVC
 define("MVC_MODEL","model");//Define o local da pasta model
 define("MVC_CONTROLLER","controller");//Define o local da pasta controller
