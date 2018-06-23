@@ -1,0 +1,7 @@
+body{background-color: #ccc;}
+/* Main marketing message and sign up button */
+.jumbotron {
+	padding: 10%;	
+	text-align: center;
+	background-color: transparent;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Cadastre-se / Entre</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+	<link rel="stylesheet" href="view/bootstrap4/css/bootstrap.min.css">
+	<link rel="icon" href="view/img/bati.png" type="image/gif" sizes="20x20">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <style>
+
+body {
+    margin: 0;
+    text-align: center;
+    background-color: #acffd2;
+    padding: 50px calc(50% - 300px) 100px;
+    
+}
+
+.account-registration input:not([type=submit]) {
+    box-sizing: border-box;
+    color: #404040;
+    font-size: 10.5pt;
+    line-height: 1.5;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    max-width: calc(100% - 20px);
+}
+
+.tab-content{
+	background-color: rgba(255,255,255,.85);
+	padding: 20px calc(50% - 225px);
+	text-align: center;
+}
+
+.inputdate input[type=number] {
+    width: 67px;
+    text-align: left;
+    display: inline-block;
+    padding-right: 0;
+}
+
+.inputnumber input[type=tel] {
+     width: 145px;
+    text-align: left;
+    display: inline-block;
+    padding-right: 0;
+}
+
+h1, h2 {
+    font-family: marcellus,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-weight: 400;
+    margin: 1.5em 0 1em;
+}
+
+#account-tabs li.active {
+    background: rgba(115, 86, 86, 0.85);
+}
+#account-tabs li {
+    cursor: pointer;
+    color: #369;
+    font-size: 15pt;
+    font-family: marcellus,sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: bottom;
+    width: calc(50% - 5px);
+    border-radius: 10px 10px 0 0;
+    padding: 15px 0;
+    background: rgba(186,206,226,.9);
+    background: -webkit-linear-gradient(bottom,#000,rgba(59,69,77,0) 10%),rgba(186,206,226,0.9);
+    background: -o-linear-gradient(bottom,#000,rgba(59,69,77,0) 10%),rgba(186,206,226,0.9);
+    background: -moz-linear-gradient(bottom,#000,rgba(59,69,77,0) 10%),rgba(186,206,226,0.9);
+    background: linear-gradient(to top,rgba(0,0,0,0.3) 2px,rgba(59,69,77,0) 10px),rgba(186,206,226,0.9);
+    background-size: 100% 10px,100%;
+    background-position: bottom;
+    background-repeat: no-repeat,repeat;
+}
+
+.active{
+    background: none !important;
+    border: none !important;
+}
+
+#left-tab{
+	margin-right: 10px;
+}
+
+.nav-tabs li.active {
+    background: rgba(255,255,255,.85) !important;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: none !important;
+}
+
+	</style>
+
+
+</head>
+
+<body>
+<input type="hidden" name="action" value="i">
+<div class="account-registration" action="http://localhost/myNFC/?cont=contLogin" method="post">
+
+	<h1>registre-se</h1>
+
+  <!-- NAV TABES -->
+  <nav id="account-tabs">
+  <ul class="nav nav-tabs">
+    <li id="left-tab" class="nav-item active">
+    	<bottom data-toggle="tab" href="#tab-login">iniciar sessão</bottom>
+    </li>
+    <li id="right-tab" class="nav-item">
+    	<bottom data-toggle="tab" href="#tab-register">registre-se</bottom>
+    </li>
+  </ul>
+  </nav>
+
+  <!-- TAB PANE LOGIN -->
+  <div class="tab-content">
+  	<div id="tab-login" class="tab-pane fade show active">
+
+  	  <h2>entre em sua conta libellum</h2>
+
+  	  <label for="inputemail" class="sr-only"></label>
+      <input type="email" id="inputemail" class="form-control" placeholder="Endereço Email">
+
+      <label for="inputpassword" class="sr-only"></label>
+      <input type="password" id="inputpassword" class="form-control" placeholder="Senha">
+
+      <button type="button" class="btn btn-outline-success">ENTRAR</button>
+    </div>
+
+    <!-- TAB PANE REGISTER -->
+  	<div id="tab-register" class="container tab-pane fade">
+
+	  	<h2>crie sua conta libellum</h2>
+
+	  	<label for="inputname" class="sr-only"></label>
+	  	<input type="text" id="inputname" name="UsuNom" placeholder="Nome Completo">
+
+	  	<label for="inputpassword" class="sr-only"></label>
+	  	<input type="password" id="inputpassword" name="UsuSen" placeholder="Senha">
+	  	<input type="password" id="inputpassword" placeholder="Confirmação de Senha">
+
+	  	<label for="inputemail" class="sr-only"></label>
+	  	<input type="email" id="inputemail" name="UsuMai" placeholder="Endereço Email">
+	  	<input type="email" id="inputemail" placeholder="Confirmação Email">
+
+	  	<div class="inputdate">
+		    <label for="inputdate" class="sr-only"></label>
+		    <input type="number" id="month" class="cadastro" name="UsuDatM" placeholder="MM" min="1" max="12">
+		    <input type="number" id="day" class="cadastro" name="UsuDatD" placeholder="DD" min="1" max="31">
+		    <input type="number" id="year" class="cadastro" name="UsuDatA" placeholder="AAAA" min="1918">
+		    <p style="display: inline-block;">Data Nascimento</p>
+	    </div>
+
+	    <label for="inputcpf" class="sr-only"></label>
+	  	<input type="text" id="inputcpf" name="UsuCpf" placeholder="CPF">
+
+	  	<label for="inputregiao" class="sr-only"></label>
+	  	<input type="text" id="inputregiao" name="UsuReg" placeholder="Região">
+
+	  	<div class="inputnumber">
+	    	<label for="inputphone" class="sr-only"></label>
+	    	<input type="tel" id="inputphone" name="UsuCel" placeholder="Telefone Celular">
+
+	    	<label for="inputtel" class="sr-only"></label>
+	    	<input type="tel" id="inputcel" name="UsuTel" placeholder="Telefone">
+	    </div>
+      <button type="button" class="btn btn-outline-success">CADASTRAR</button>
+    </div>
+	</div>
+</div>
+
+<script type="text/javascript" src="view/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="view/bootstrap4/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(".nav-item").on("click",function(){
+		$(".nav-tabs li").removeClass("active");
+		$(this).addClass("active");
+	});
+</script>
+
+</body>
+</html>
