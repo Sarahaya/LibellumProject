@@ -14,7 +14,7 @@ class contSite{
 	}
 
 	public function home(){
-		include MVC_VIEW."/site/home1.html";
+		include MVC_VIEW."/site/homepageX.html";
 	}
 
 	public function login(){
