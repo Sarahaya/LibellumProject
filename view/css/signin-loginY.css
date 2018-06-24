@@ -1,0 +1,108 @@
+.account-registration{
+  padding: 50px calc(50% - 300px) 100px;
+}
+
+.account-registration input:not([type=submit]) {
+    box-sizing: border-box;
+    color: #404040;
+    font-size: 10.5pt;
+    line-height: 1.5;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    max-width: calc(100% - 20px);
+}
+
+.tab-content{
+  background-color: rgba(255,255,255,.85);
+  padding: 20px calc(50% - 225px);
+  text-align: center;
+}
+
+.inputdate input[type=number] {
+    width: 67px;
+    text-align: left;
+    display: inline-block;
+    padding-right: 0;
+}
+
+.inputnumber input[type=tel] {
+     width: 145px;
+    text-align: left;
+    display: inline-block;
+    padding-right: 0;
+}
+
+h1, h2 {
+    font-family: marcellus,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-weight: 400;
+    margin: 1.5em 0 1em;
+}
+
+#account-tabs li.active {
+    background: rgba(115, 86, 86, 0.85);
+}
+#account-tabs li {
+    cursor: pointer;
+    color: #369;
+    font-size: 15pt;
+    font-family: marcellus,sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: bottom;
+    width: calc(50% - 5px);
+    border-radius: 10px 10px 0 0;
+    padding: 15px 0;
+    background: rgba(186,206,226,.9);
+    background: -webkit-linear-gradient(bottom,#000,rgba(59,69,77,0) 10%),rgba(186,206,226,0.9);
+    background: -o-linear-gradient(bottom,#000,rgba(59,69,77,0) 10%),rgba(186,206,226,0.9);
+    background: -moz-linear-gradient(bottom,#000,rgba(59,69,77,0) 10%),rgba(186,206,226,0.9);
+    background: linear-gradient(to top,rgba(0,0,0,0.3) 2px,rgba(59,69,77,0) 10px),rgba(186,206,226,0.9);
+    background-size: 100% 10px,100%;
+    background-position: bottom;
+    background-repeat: no-repeat,repeat;
+}
+
+.active{
+    background: none !important;
+    border: none !important;
+}
+
+#left-tab{
+  margin-right: 10px;
+}
+
+.nav-tabs li.active {
+    background: rgba(255,255,255,.85) !important;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: none !important;
+}
+
+.bg-dark{
+  height: 45px;
+}
+
+#navbarDropdown{
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  -webkit-border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: rgb(100, 100, 100);
+  -webkit-border-radius: 20px;
+}

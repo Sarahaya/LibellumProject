@@ -4,7 +4,7 @@ define("MVC_MODEL","model");//Define o local da pasta model
 define("MVC_CONTROLLER","controller");//Define o local da pasta controller
 define("MVC_VIEW","view");//Define o local da pasta view
 define("DEFAULT_CONTROLLER","contSite");
-define("PATH_LIBS",'/var/www/html/libs');
+define("PATH_LIBS",'libs');
 
 include MVC_MODEL."/controller.php";
 
