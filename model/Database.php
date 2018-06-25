@@ -15,13 +15,13 @@ class Database
     {
         # Informações sobre o banco de dados:
         $db_host = "localhost";
-        $db_nome = "banco";
-        $db_usuario = "usuario";
-        $db_senha = "senha";
+        $db_nome = "myNFC";
+        $db_usuario = "root";
+        $db_senha = "456845";
         $db_driver = "mysql";
         # Informações sobre o sistema:
-        $sistema_titulo = "Nome do Sistema";
-        $sistema_email = "alguem@gmail.com";
+        $sistema_titulo = "Libellum";
+        $sistema_email = "trabalhotex1@gmail.com";
         try
         {
             # Atribui o objeto PDO à variável $db.
