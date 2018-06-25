@@ -66,7 +66,7 @@
     </div>
   </nav>
   
-  <form class="account-registration">
+  <div class="account-registration">
     <h1>registre-se</h1>
 
     <!-- NAV TABES -->
@@ -83,7 +83,7 @@
 
     <!-- TAB PANE LOGIN -->
     <div class="tab-content">
-      <div id="tab-login" class="tab-pane fade show active">
+      <form id="tab-login" class="tab-pane fade show active" action="?cont=contLogin?autenticar" method="POST">
 
         <h2>entre em sua conta libellum</h2>
 
@@ -93,11 +93,11 @@
         <label for="inputpassword" class="sr-only"></label>
         <input type="password" id="inputpassword" class="form-control" placeholder="Senha">
         <!-- Button Entrar -->
-        <button type="button" class="btn btn-outline-success">ENTRAR</button>
-      </div>
+        <button type="submit" class="btn btn-outline-success">ENTRAR</button>
+      </form>
 
       <!-- TAB PANE REGISTER -->
-      <div id="tab-register" class="container tab-pane fade">
+      <form id="tab-register" class="container tab-pane fade">
 
         <h2>crie sua conta libellum</h2>
 
@@ -108,14 +108,9 @@
         <input type="password" id="register-password" name="UsuSen" placeholder="Senha">
         <input type="password" id="confirm-password" placeholder="Confirmação de Senha">
 
-<<<<<<< HEAD
         <label for="inputemail" class="sr-only"></label>
         <input type="email" id="register-email" name="UsuMai" placeholder="Endereço Email">
         <input type="email" id="confirm-email" placeholder="Confirmação Email">
-=======
-      <button type="button" class="btn btn-outline-success" formaction="?autenticar">ENTRAR</button>
-    </div>
->>>>>>> 8e89084ecee56bae5c07ecd2e8704c8eec3e9f3f
 
         <div class="inputdate">
           <label for="inputdate" class="sr-only"></label>
@@ -142,9 +137,9 @@
         <!-- Button Cadastrar -->
         <button type="button" class="btn btn-outline-success">CADASTRAR</button>
 
-      </div>
+      </form>
     </div>
-  </form>
+  </div>
 
   
   <script type="text/javascript" src="view/jquery/jquery.min.js"></script>
