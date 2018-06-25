@@ -6,7 +6,7 @@ class login{
 	private $conmyNFC;//atributo de conexão com o MyNFC
 
 	public function __construct(){
-		require_once MVC_MODEL."//Database.php";
+		require_once MVC_MODEL."/Database.php";
  		$db = Database::conexao();
 	}
 	public function consultaUsuario(){

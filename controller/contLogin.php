@@ -15,9 +15,9 @@ class contLogin{
 	}
 
 	public function autenticar(){
-		if($login->consultaUsuario()){
-			Echo "deu certo";
-		}
+		 if($login->consultaUsuario()){
+			 Echo "deu certo";
+		 }
 	}
 
 }
