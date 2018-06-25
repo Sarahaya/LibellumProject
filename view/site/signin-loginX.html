@@ -69,78 +69,82 @@
   <form class="account-registration">
     <h1>registre-se</h1>
 
-  <!-- NAV TABES -->
-  <nav id="account-tabs">
-  <ul class="nav nav-tabs">
-    <li id="left-tab" class="nav-item active">
-      <bottom data-toggle="tab" href="#tab-login">iniciar sessão</bottom>
-    </li>
-    <li id="right-tab" class="nav-item">
-      <bottom data-toggle="tab" href="#tab-register">registre-se</bottom>
-    </li>
-  </ul>
-  </nav>
+    <!-- NAV TABES -->
+    <nav id="account-tabs">
+    <ul class="nav nav-tabs">
+      <li id="left-tab" class="nav-item active">
+        <bottom data-toggle="tab" href="#tab-login">iniciar sessão</bottom>
+      </li>
+      <li id="right-tab" class="nav-item">
+        <bottom data-toggle="tab" href="#tab-register">registre-se</bottom>
+      </li>
+    </ul>
+    </nav>
 
-  <!-- TAB PANE LOGIN -->
-  <div class="tab-content">
-    <div id="tab-login" class="tab-pane fade show active">
+    <!-- TAB PANE LOGIN -->
+    <div class="tab-content">
+      <div id="tab-login" class="tab-pane fade show active">
 
-      <h2>entre em sua conta libellum</h2>
+        <h2>entre em sua conta libellum</h2>
 
-      <label for="inputemail" class="sr-only"></label>
-      <input type="email" id="inputemail" class="form-control" placeholder="Endereço Email">
+        <label for="inputemail" class="sr-only"></label>
+        <input type="email" id="inputemail" class="form-control" placeholder="Endereço Email">
 
-      <label for="inputpassword" class="sr-only"></label>
-      <input type="password" id="inputpassword" class="form-control" placeholder="Senha">
-
-      <button type="button" class="btn btn-outline-success">ENTRAR</button>
-    </div>
-
-    <!-- TAB PANE REGISTER -->
-    <div id="tab-register" class="container tab-pane fade">
-
-      <h2>crie sua conta libellum</h2>
-
-      <label for="inputname" class="sr-only"></label>
-      <input type="text" id="register-name" name="UsuNom" placeholder="Nome Completo">
-
-      <label for="inputpassword" class="sr-only"></label>
-      <input type="password" id="register-password" name="UsuSen" placeholder="Senha">
-      <input type="password" id="confirm-password" placeholder="Confirmação de Senha">
-
-      <label for="inputemail" class="sr-only"></label>
-      <input type="email" id="register-email" name="UsuMai" placeholder="Endereço Email">
-      <input type="email" id="confirm-email" placeholder="Confirmação Email">
-
-      <div class="inputdate">
-        <label for="inputdate" class="sr-only"></label>
-        <input type="number" id="month" class="cadastro" name="UsuDatM" placeholder="MM" min="1" max="12">
-        <input type="number" id="day" class="cadastro" name="UsuDatD" placeholder="DD" min="1" max="31">
-        <input type="number" id="year" class="cadastro" name="UsuDatA" placeholder="AAAA" min="1918">
-        <p style="display: inline-block;">Data Nascimento</p>
+        <label for="inputpassword" class="sr-only"></label>
+        <input type="password" id="inputpassword" class="form-control" placeholder="Senha">
+        <!-- Button Entrar -->
+        <button type="button" class="btn btn-outline-success">ENTRAR</button>
       </div>
 
-      <label for="inputcpf" class="sr-only"></label>
-      <input type="text" id="register-cpf" name="UsuCpf" placeholder="CPF">
+      <!-- TAB PANE REGISTER -->
+      <div id="tab-register" class="container tab-pane fade">
 
-      <label for="inputregiao" class="sr-only"></label>
-      <input type="text" id="register-regiao" name="UsuReg" placeholder="Região">
+        <h2>crie sua conta libellum</h2>
 
-      <div class="inputnumber">
-        <label for="inputphone" class="sr-only"></label>
-        <input type="tel" id="register-phone" name="UsuCel" placeholder="Telefone Celular">
+        <label for="inputname" class="sr-only"></label>
+        <input type="text" id="register-name" name="UsuNom" placeholder="Nome Completo">
 
-        <label for="inputtel" class="sr-only"></label>
-        <input type="tel" id="register-cel" name="UsuTel" placeholder="Telefone">
-      </div>
+        <label for="inputpassword" class="sr-only"></label>
+        <input type="password" id="register-password" name="UsuSen" placeholder="Senha">
+        <input type="password" id="confirm-password" placeholder="Confirmação de Senha">
+
+        <label for="inputemail" class="sr-only"></label>
+        <input type="email" id="register-email" name="UsuMai" placeholder="Endereço Email">
+        <input type="email" id="confirm-email" placeholder="Confirmação Email">
+
+        <div class="inputdate">
+          <label for="inputdate" class="sr-only"></label>
+          <input type="number" id="month" class="cadastro" name="UsuDatM" placeholder="MM" min="1" max="12">
+          <input type="number" id="day" class="cadastro" name="UsuDatD" placeholder="DD" min="1" max="31">
+          <input type="number" id="year" class="cadastro" name="UsuDatA" placeholder="AAAA" min="1918">
+          <p style="display: inline-block;">Data Nascimento</p>
+        </div>
+
+        <label for="inputcpf" class="sr-only"></label>
+        <input type="text" id="register-cpf" name="UsuCpf" placeholder="CPF">
+
+        <label for="inputregiao" class="sr-only"></label>
+        <input type="text" id="register-regiao" name="UsuReg" placeholder="Região">
+
+        <div class="inputnumber">
+          <label for="inputphone" class="sr-only"></label>
+          <input type="tel" id="register-phone" name="UsuCel" placeholder="Telefone Celular">
+
+          <label for="inputtel" class="sr-only"></label>
+          <input type="tel" id="register-cel" name="UsuTel" placeholder="Telefone">
+        </div>
+
+        <!-- Button Cadastrar -->
         <button type="button" class="btn btn-outline-success">CADASTRAR</button>
+
+      </div>
     </div>
-  </div>
   </form>
 
   
   <script type="text/javascript" src="view/jquery/jquery.min.js"></script>
   <script type="text/javascript" src="view/bootstrap4/js/bootstrap.min.js"></script>
+  <!-- Troca de cor nas Tabs -->
   <script type="text/javascript">
   $(".nav-item").on("click",function(){
     $(".nav-tabs li").removeClass("active");
