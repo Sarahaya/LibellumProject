@@ -14,4 +14,10 @@ class contLogin{
 		include MVC_VIEW."/site/signin-loginX.html";
 	}
 
+	public function autenticar(){
+		if($login->consultaUsuario()){
+			Echo "deu certo";
+		}
+	}
+
 }

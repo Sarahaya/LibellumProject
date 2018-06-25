@@ -15,10 +15,15 @@ class login{
 
 		$select = $db->query("SELECT UsuMai,UsuSen FROM USUARIO");
 		$result = $select->fetchAll();
-		
 		foreach($result as $row){
-			echo $row['UsuMai'].'<br />';
-			echo $row['UsuSen'].'<br />';
+	//		echo $row['UsuMai'].'<br />';
+	//		echo $row['UsuSen'].'<br />';
+		}
+		if ($row[UsuMai] == $mail && $row[UsuSen]== $psw) {
+			return true;
+		}
+		else {
+			return false;
 		}
 	}
 }
